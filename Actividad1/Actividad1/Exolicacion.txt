@@ -1,0 +1,17 @@
+Lista de usuarios 10 usuarios
+nombre 
+edad
+apellido
+peso
+
+
+2
+Lista de profesiones 10
+salario
+importancia 
+estado(True false)
+
+3
+main
+junta los dos objetos 
+usuario y cargo 
