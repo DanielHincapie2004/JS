@@ -1,0 +1,4 @@
+Procesador: AMD Ryzen 5 3500U with Radeon Vega Mobile Gfx   
+ Memoria Total: 10.682433536000001 
+ Version: Windows 10 Pro 
+ Usuario: Asus
