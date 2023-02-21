@@ -1,0 +1,23 @@
+{
+  "name": "programacion-avanzada",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "ej": "nodemon Express.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielHincapie2004/DanielHincapie.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielHincapie2004/DanielHincapie/issues"
+  },
+  "homepage": "https://github.com/DanielHincapie2004/DanielHincapie#readme",
+  "dependencies": {
+    "morgan": "^1.10.0"
+  }
+}
