@@ -1,0 +1,6 @@
+.fondo{
+    background-image: url('wave-haikei.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
