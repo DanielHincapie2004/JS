@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 const host = "localhost";
-const port = 5355;
+const port = 3001;
 let database = [];
 const bodyParser = require('body-parser');
 app.use(express.json())
@@ -60,13 +60,12 @@ app.put('/productos/:id',(req, res)=>{
             res.send(arrayTexto[i]);
 
         }
+    
 
-        
-        console.log(arrayTexto[i]);
     }
     
     console.log(typeof(arrayTexto));
-    let data= `${JSON.stringify(arrayTexto)}\n`
+    let data=  (arrayTexto).toString()
     fs.writeFileSync("./modulos/baseDatos.txt",data,'utf-8') 
 
    
@@ -77,7 +76,17 @@ app.put('/productos/:id',(req, res)=>{
 app.delete('/productos/:id',(req, res)=>{
     const read = fs.readFileSync("./modulos/baseDatos.txt","utf-8")
     const arrayTexto= read.split("\n")
-    res.send(arrayTexto[parseInt( req.params.id)-1])
+    let elementoEncontrado=arrayTexto[parseInt( req.params.id)-1]
+    const nuevoArreglo=arrayTexto.filter(function(arreglo3){
+        return arreglo3 !=elementoEncontrado
+    })
+  
+    console.log(JSON.parse(nuevoArreglo));
+    
+    console.log(nuevoArreglo);
+    let data= (nuevoArreglo).toString()
+    fs.writeFileSync("./modulos/baseDatos.txt",data) 
+    
 
    
 })
