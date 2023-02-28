@@ -8,7 +8,7 @@ router.get("/help",(req,res)=>{
 })
 
 router.get("/web/:nombre",(req,res)=>{
-    res.render("web",{
+    res.render(/*Nombre Archivo*/"web",{
         nombre:req.params.nombre
     })
 })

@@ -8,7 +8,8 @@ const info = require('./info')
 
 
 app.set('view engine', 'ejs')
-app.set('views',join(__dirname,'views'))
+app.set('views',join(__dirname,'/views'))
+app.use(express.static('./static'))
 app.use(info)
 app.use(rutas)
 
