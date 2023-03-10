@@ -46,9 +46,7 @@
     </v-app-bar>
 
     <v-main>
-      <div class="about">
-        <h1>This is an about page</h1>
-      </div>
+      <slot></slot>
     </v-main>
   </v-app>
 </template>

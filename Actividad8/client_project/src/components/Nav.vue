@@ -2,39 +2,7 @@
     <v-app id="inspire">
       
       <v-navigation-drawer v-model="drawer">
-        <RouterLink to="/" >
-        <div class="d-flex justify-space-around align-center flex-column flex-sm-row" >
-          <v-btn
-            class="w-80 h-70 ma-5"
-            variant="outlined"
-            color="black"
-          >
-          Home
-        </v-btn>
-        </div>
-      </RouterLink>
-      <RouterLink to="/about" >
-        <div class="d-flex justify-space-around align-center flex-column flex-sm-row" >
-          <v-btn
-            class="w-80 h-70 ma-5"
-            variant="outlined"
-            color="black"
-          >
-          About
-        </v-btn>
-        </div>
-      </RouterLink>
-      <RouterLink to="/help" >
-        <div class="d-flex justify-space-around align-center flex-column flex-sm-row" >
-          <v-btn
-            class="w-80 h-70 ma-5"
-            variant="outlined"
-            color="black"
-          >
-          Help
-        </v-btn>
-        </div>
-      </RouterLink>
+        <BotNav/>
       </v-navigation-drawer>
     
 
@@ -46,17 +14,18 @@
       </v-app-bar>
   
       <v-main>
-        <!--  -->
+        <slot></slot>
       </v-main>
     </v-app>
   </template>
   
   <script>
-import { RouterLink } from 'vue-router';
+import BotNav from "./BotNav.vue";
+import { defineComponent } from "vue";
 
-    export default {
+    export default defineComponent({
     name: "NavBar",
     data: () => ({ drawer: false }),
-    components: { RouterLink }
-}
+    components: { BotNav }
+})
   </script>
