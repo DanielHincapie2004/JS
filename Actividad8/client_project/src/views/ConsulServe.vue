@@ -72,7 +72,7 @@
             methods:{
                 
                 obtenerData(){
-                fetch('https://picsum.photos/v2/list?page=2&limit=10').then(response => response.json()).then(data =>{
+                fetch('https://picsum.photos/v2/list?page=2&limit=25').then(response => response.json()).then(data =>{
                     this.lista = data
     
                    

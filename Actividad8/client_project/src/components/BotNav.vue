@@ -14,7 +14,8 @@
                 {name: 'home', ruta:'/'},
                 {name: 'about', ruta:'/about'},
                 {name: 'help', ruta:'/help'},
-                {name: 'consulta', ruta: '/consulta'}
+                {name: 'consulta', ruta: '/consulta'},
+                {name: 'list', ruta: '/list'}
             ]
         }),
         methods: {

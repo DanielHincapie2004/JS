@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import HelpView from '../views/HelpView.vue'
 import AboutView from '../views/AboutView.vue'
 import ConsulServe from '../views/ConsulServe.vue'
+import ListView from '../views/ListView.vue'
 
 const routes = [
   {
@@ -24,6 +25,11 @@ const routes = [
     path: '/consulta',
     name: 'consulta',
     component: ConsulServe
+  },
+  {
+    path: '/list',
+    name: 'list',
+    component: ListView
   },
 ]
 
