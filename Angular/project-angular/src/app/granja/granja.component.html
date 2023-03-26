@@ -1,0 +1,21 @@
+<style>
+    h1{
+        background-color: black;
+    }
+    
+</style>
+<div class="ab">
+    <h1>
+        Welcome a la finca del Patron
+    </h1>
+    <app-animales></app-animales>
+    <form>
+        <input type="number" [(ngModel)]="datos.numero1" name="numero1">
+        <input type="number" [(ngModel)]="datos.numero2" name="numero2">
+        <button type="button" (click)="sumar()">Sumar</button>
+        <button type="button" (click)="resta()">Resta</button>
+      </form>
+      <p>Resultado: {{ datos.resultado }}</p>
+</div>
+
+
